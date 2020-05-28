@@ -7,7 +7,7 @@ import ReduxThunk from "redux-thunk";
 
 import cartReducer from "./store/reducers/cart";
 import productsReducer from "./store/reducers/products";
-import ShopNavigator from "./navigation/ShopNavigator";
+import NavigatonContainer from "./navigation/NavigationContainer";
 import ordersReducer from "./store/reducers/orders";
 import authReducer from "./store/reducers/auth";
 
@@ -42,7 +42,7 @@ export default function App() {
   }
   return (
     <Provider store={store}>
-      <ShopNavigator />
+      <NavigatonContainer />
     </Provider>
   );
 }
